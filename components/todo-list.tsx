@@ -10,7 +10,7 @@ export function TodoList() {
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
-      <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">Cool Todo List</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">Reap Todo List</h1>
       <AddTodoForm onAddTodo={updateTodos} />
       <motion.ul className="mt-6 space-y-4">
         <AnimatePresence>

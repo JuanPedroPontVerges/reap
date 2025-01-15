@@ -6,6 +6,7 @@ import {
   CardDescription,
   CardContent,
 } from "@/components/ui/card";
+import BackButton from "./back-button";
 
 interface TodoDetailsProps {
   todo: Todo;
@@ -15,7 +16,10 @@ export function TodoDetails({ todo }: TodoDetailsProps) {
   return (
     <Card className="w-full max-w-md mx-auto mt-10">
       <CardHeader>
-        <CardTitle>{todo.text}</CardTitle>
+        <div className="flex items-center justify-between">
+          <BackButton />
+          <CardTitle>{todo.text}</CardTitle>
+        </div>
         <CardDescription>
           Created on: {new Date(todo.createdAt).toLocaleString()}
         </CardDescription>
